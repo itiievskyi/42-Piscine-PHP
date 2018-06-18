@@ -1,6 +1,7 @@
 body {
   position: absolute;
   min-width: 1890px;
+  min-height: 910px;
   color: black;
   background-color: #505050;
 }
@@ -136,4 +137,5 @@ body {
   margin-top: 505px;
   z-index: 10;
   position: absolute;
+  font-family: Palatino;
 }
