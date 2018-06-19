@@ -1,0 +1,94 @@
+body {
+  color: black;
+  background-color: white;
+}
+table {
+  background-color: inherit;
+  color: inherit;
+  text-align: center;
+  vertical-align: middle;
+  font-family: Arial, sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+}
+td {
+  background-color: inherit;
+  color: inherit;
+  font-size: 1.9vw;
+  font-weight: bold;
+  page-break-inside: avoid;
+  width: 5.5vw;
+  padding: 0.1vw;
+}
+th {
+  color: black;
+  background-color: #d8ffee;
+  font-size: 1.3vw;
+  line-height: 2vw;
+  height: 2vw;
+}
+.chalcogen {
+  background-color: #a0ffa0;
+  color: inherit;
+}
+.inertgase {
+  background-color: #c0ffff;
+  color: inherit;
+}
+.alkali {
+  background-color: #FF6666;
+  color: inherit;
+}
+.earthmetal {
+  background-color: #FFDEAD;
+  color: inherit;
+}
+.metalloid {
+  background-color: #cccc99;
+  color: inherit;
+}
+.posttrans {
+  background-color: #cccccc;
+  color: inherit;
+}
+.halogen {
+  background-color: #ffff99;
+  color: inherit;
+}
+.transmetal {
+  background-color: #ffc0c0;
+  color: inherit;
+}
+.lanthanoid {
+  background-color: #FFBFFF;
+  color: inherit;
+}
+.actinoid {
+  background-color: #ef99cc;
+  color: inherit;
+}
+.superact {
+  background-color: #33cc66;
+  color: inherit;
+}
+.m {
+  text-align: right;
+  font-weight: normal;
+  font-size: 0.9vw;
+  margin: 0.2vw 0.2vw 0.4vw 0.2vw;
+}
+.num {
+  text-align: left;
+  font-weight: normal;
+  font-size: 0.8vw;
+  margin: 0.4vw 0.2vw 0.2vw 0.2vw;
+}
+.nav {
+  white-space: nowrap;
+  font-weight: normal;
+  font-size: 0.9vw;
+  margin: 0.2vw 0.2vw 0.2vw 0.2vw;
+}
+table img {
+  width: 13vw;
+}
