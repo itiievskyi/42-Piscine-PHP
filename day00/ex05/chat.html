@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Day of the 42</title>
+<link href="scumm.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="top">
+  <img id="top_image" src="resources/day_of_the_42.png" alt="Welcome!"
+  title="Welcome!">
+  <img id="loupe" src="resources/loupe.png" alt="Search" title="Search">
+  <a href="scumm.html">
+    <img class="small" src="resources/reload.png"
+    alt="Start from the beginning" title="Start from the beginning">
+  </a>
+  <a href="http://www.relaischateaux.com">
+    <img class="small" src="resources/close.gif"
+    style="margin-top: 80px;"
+    alt="Disconnect" title="I'm tired">
+  </a>
+</div>
+<br>
+<div class="wrap">
+  <div class="left">
+    <img class="icon" src="resources/arrow.png" alt="Advance" title="Advance">
+    <img class="icon" src="resources/main.png" alt="Take" title="Take">
+    <img class="icon" src="resources/oeil.png" alt="Look" title="Look">
+    <img class="icon" src="resources/outil.png" alt="Use" title="Use">
+    <img class="icon" src="resources/chat-icon.png" alt="Speak" title="Speak">
+  </div>
+  <div class="main">
+    <img id="main_image" src="resources/donkey.jpeg"
+    alt="Just a normal day at 42" title="That's donkey">
+  </div>
+  <div class="right">
+    <img id="book" src="resources/book.png" alt="F.A.Q." title="F.A.Q.">
+    <img id="towel" src="resources/towel.png" alt="Service team support"
+    title="Service team support">
+    <div class="brick" title="It's just a wall, pal, just a wall...">
+    </div>
+  </div>
+  <div class="form" style="height:100px">
+    <div style="margin: 10px;">
+      <p id = "chat_1">So... Here you are. I just want to ask you something.
+      Please let me know your name. Just type it here:</p>
+    </div>
+    <div>
+    <form id="field">
+      <input type="text" id="a">
+      <div id="submit" onclick="myFunction()"><p id="v">Send</p>
+      </div>
+    </form>
+    </div>
+  </div>
+</div>
+<script>
+var x = 0;
+function myFunction() {
+  x = x + 1;
+  if (x == 1)
+  {
+    document.getElementById("chat_1").innerHTML =
+    "Nice to meet you;)<br>Now type something nice for me and start the game!";
+    document.getElementById("field").reset();
+  }
+  if (x == 2)
+  {
+    document.getElementById("chat_1").innerHTML =
+    "Thank you!<br>Now let's play!";
+    document.getElementById("field").reset();
+    document.getElementById("a").style.display = 'none';
+    document.getElementById("submit").style=
+    "padding-left:100px; padding-right:100px; margin-left:100px;";
+    document.getElementById("v").innerHTML="LET ME PLAY!!!!!";
+  }
+  if (x == 3)
+  {
+    window.location.href = 'start.html';
+  }
+};
+</script>
+</body>
+</html>
