@@ -1,5 +1,5 @@
 body {
-  position: absolute;
+  position: relative;
   min-width: 1890px;
   min-height: 910px;
   color: black;
@@ -21,6 +21,7 @@ body {
 }
 
 .wrap {
+  position: relative;
   width: 1360px;
   margin-left: auto;
   margin-right: auto;
@@ -129,13 +130,60 @@ body {
   border: 0px;
   border-style: solid;
   color: black;
-  background-color: #a4fb96;
+  background-color: #7afa77;
   border-radius: 10px;
   box-shadow: 10px 10px 10px black;
   display: block;
-  margin-left: 190px;
+  margin-left: -75px;
   margin-top: 505px;
   z-index: 10;
   position: absolute;
-  font-family: Palatino;
+  font-family: sans-serif;
+  letter-spacing: 0.65px;
+  font-size: 17px;
+  text-align: left;
+
+}
+.form p {
+  display: inline;
+}
+.form h2 {
+  display: inline;
+  font-family: Georgia, serif;
+  font-size: 32px;
+  font-weight: lighter;
+}
+
+.form h3 {
+  font-family: sans-serif;
+  letter-spacing: 0.65px;
+  font-size: 17px;
+  text-align: left;
+  text-shadow: 5px 5px 5px red;
+  display: inline;
+  font-weight: normal;
+}
+
+.form input[type=text] {
+  width: 380px;
+  height: 14px;
+  margin-left: 13px;
+  margin-top: 3px;
+  border: 2px solid;
+  border-bottom-color: #eeeeee;
+  border-right-color: #eeeeee;
+  border-left-color: #9d969d;
+  border-top-color: #9d969d;
+}
+
+.form input[type=submit] {
+  width: 80px;
+  height: 20px;
+  margin-left: 4px;
+  border-radius: 1px;
+  text-align: center;
+  font-size: 13px;
+  letter-spacing: 0.25px;
+  border-color: #9d969d;
+  background: linear-gradient(#f0f0f0, #dcdcdc);
 }

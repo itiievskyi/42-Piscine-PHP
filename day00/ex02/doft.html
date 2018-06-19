@@ -32,7 +32,16 @@
   </div>
   <div class="main">
     <img id="main_image" src="resources/cluster.jpg"
-    alt="Just a normal day at 42" title="Just a normal day at 42">
+    alt="Just a normal day at 42" title="Just a normal day at 42"
+    usemap="#clustermap">
+    <map name="clustermap">
+    <area shape="poly"
+    coords="325,325,340,390,340,440,390,455,410,460,450,415,445,385,400,395,395,345,325,325"
+    href="http://www.ikea.com" alt="Buy the chair!" title="Buy the same chair!">
+    <area shape="poly"
+    coords="790,315,790,425,850,440,845,465,905,480,910,465,900,460,900,450,975,460,980,330,790,315"
+    href="http://www.apple.com" alt="Buy that iMac!" title="Buy that iMac">
+</map>
   </div>
   <div class="right">
     <img id="book" src="resources/book.png" alt="F.A.Q." title="F.A.Q.">
@@ -41,12 +50,16 @@
     <div class="brick" title="It's just a wall, pal, just a wall...">
     </div>
   </div>
-</div>
-<div class="form">
-  <div style="margin-left: 10px;">
-    <p>Vouz entrez alors dans une grande piece remplie
-    <br>d'ordinateurs...<br></p>
-    <p><i> - Bonjour, vous êtes nouveau ici ?</i></p>
+  <div class="form">
+    <div style="margin-left: 10px; margin-top: 10px;">
+      <p>Vous </p><h2>entrez</h2><p> alors dans une grande piece remplie</p>
+      <p>d'</p><h3>ordinateurs</h3><p>...</p>
+      <p><br><i> - Bonjour, vous êtes nouveau ici ?</i></p>
+    </div>
+    <form>
+      <input type="text" name="field" title="Type your message here">
+      <input type="submit" name="send" title="Send message" value="Repondre">
+    </form>
   </div>
 </div>
 </body>
