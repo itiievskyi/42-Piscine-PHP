@@ -8,7 +8,7 @@ else
 	$b = trim($argv[3]);
 	$sign = trim($argv[2]);
 	if ($b == 0 && ($sign == "/" || $sign == "%"))
-		echo "Incorrect Parameters\n";
+		echo "0 mustn't be a denominator!\n";
 	else if ($sign == "+")
 		echo $a + $b."\n";
 	else if ($sign == "-")

@@ -81,7 +81,7 @@ else
 if (!$error)
 {
 	if ($b == 0 && ($op == "/" || $op == "%"))
-		echo "Incorrect Parameters\n";
+		echo "0 mustn't be a denominator!\n";
 	else if ($op == "+")
 		echo $a + $b."\n";
 	else if ($op == "-")
