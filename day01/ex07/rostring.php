@@ -11,22 +11,16 @@ if ($argc > 1)
 {
 	$arr = ft_split($argv[1]);
 	$size = count($arr);
-	if ($size > 1)
-		$arr[$size] = $arr[0];
+	$arr[$size] = $arr[0];
+	unset($arr[0]);
 	foreach ($arr as $elem)
 	{
-		if ($size > 1)
-		{
-			if ($i > 0)
-				echo "$elem";
-			$i++;
-			if ($arr[$i] && $i > 1)
-				echo " ";
-			else if ($i > 1)
-				echo "\n";
-		}
+		echo "$elem";
+		$i++;
+		if ($i < $size)
+			echo " ";
 		else
-			echo $arr[0]."\n";
+			echo "\n";
 	}
 }
 ?>
