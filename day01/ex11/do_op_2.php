@@ -3,7 +3,7 @@
 
 function is_op($check)
 {
-	if (strchr("+-*/%", $check))
+	if ($check && strchr("+-*/%", $check))
 		return (1);
 	return (0);
 }
@@ -18,6 +18,8 @@ function ft_atoi($line)
 		$sign = -1;
 		$x++;
 	}
+	if ($line[$x] == '+')
+		$x++;
 	while (is_numeric($line[$x]))
 		$result = $result * 10 + $line[$x++];
 	return ($result * $sign);
@@ -31,7 +33,7 @@ else
 	$error = 0;
 	$str = trim($argv[1]);
 	$str = preg_replace('/ +/', ' ', $str);
-	if (is_numeric($str[$i]) ||
+	if ($str && is_numeric($str[$i]) ||
 	(($str[$i] == '-' || $str[$i] == '+') && is_numeric($str[$i + 1])))
 	{
 		$a = ft_atoi($str, $error);
@@ -41,7 +43,7 @@ else
 		$error = 1;
 	while (is_numeric($str[$i]))
 		$i++;
-	if (!is_op($str[$i]) && $str[$i] != ' ')
+	if ($str[$i] != ' ' && !is_op($str[$i]))
 		$error = 1;
 	if ($error)
 	{

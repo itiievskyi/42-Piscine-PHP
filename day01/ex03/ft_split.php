@@ -3,6 +3,8 @@
 	{
 		$arr = preg_split("/ +/", trim($str));
 		sort($arr);
-		return (array_filter($arr, 'strlen'));
+		if (!count($arr) || !$arr[0])
+			return(NULL);
+		return ($arr);
 	}
 ?>
