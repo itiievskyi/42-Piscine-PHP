@@ -1,6 +1,5 @@
 <?php
 	$cook = $_GET;
-	print_r($cook);
 	if (array_key_exists("action", $cook)) {
 		if ($tab[$action] == "set" && $tab[$value] && $tab[$name]) {
 			setcookie($tab[$name], $tab[$value], time() + (86400 * 30), '/');
