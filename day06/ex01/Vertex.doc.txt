@@ -1,4 +1,17 @@
 
 <- Vertex ----------------------------------------------------------------------
-Your documentation here.
+Vertex class can be used for setting the coordinates of some point.
+
+It requires 3 main parameters for doing that:
+'x', 'y' and 'z' that set x, y and z coordinates respectively.
+
+There are also two optional parameters:
+'w' - homogeneous coordinate, that is usually used in projective geometry.
+The default value of 'w' is 1.00.
+'color' - sets the color of the vertex using class Color.
+Could be passed either as array, or as a Color instance.
+The default value of 'color' is rgb(255, 255, 255), or 'white'.
+
+The above mentioned parameters are private but can be read and written
+thanks to special accessors.
 ---------------------------------------------------------------------- Vertex ->
