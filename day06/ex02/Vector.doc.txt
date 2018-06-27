@@ -1,0 +1,37 @@
+
+<- Vector ----------------------------------------------------------------------
+The Vector class allows you to do some operations with vectors.
+
+It operates with Vertex class, so to create a vector, you need to pass the next
+parameters:
+
+(mandatory) 'dest' - the vector’s destination vertex,
+(optional) 'orig' - the vector’s origin vertex.
+
+If 'orig doesn't exist, its default value is vertex with (x=0, y=0, z=0, w=1).
+
+The syntax is:
+
+	$new_vector = new Vector( array( 'orig' => $orig, 'dest' => $dest ) );
+
+where 'orig' and 'dest' are Vertex' objects created earlier.
+
+The Vertex class parameters ('x', 'y', 'z' and 'w') are private
+and can be READ ONLY using accessors (the syntax is usual).
+Created vector couldn't be modified.
+
+Also, there some useful methods to operate with your vectors:
+*	float magnitude() : returns the vector’s length (or "norm").
+*	Vector normalize() : returns a normalized version of the vector. If the
+		vector is already normalized, returns a fresh copy of the vector.
+*	Vector add(Vector $rhs) : returns the sum vector of both vectors.
+*	Vector sub(Vector $rhs) : returns the difference vector of both vectors.
+*	Vector opposite() : returns the opposite vector.
+*	Vector scalarProduct($k) : returns the multiplication of the vector
+		with a scalar.
+*	float dotProduct(Vector $rhs) : returns the scalar multiplication
+		of both vectors.
+*	float cos(Vector $rhs) : returns the angle’s cosine between both vec- tors.
+*	Vector crossProduct(Vector $rhs) : returns the cross multiplication
+		of both vectors (right-hand mark)
+---------------------------------------------------------------------- Vector ->

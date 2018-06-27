@@ -13,5 +13,5 @@ Could be passed either as array, or as a Color instance.
 The default value of 'color' is rgb(255, 255, 255), or 'white'.
 
 The above mentioned parameters are private but can be read and written
-thanks to special accessors.
+thanks to special accessors (the syntax is usual).
 ---------------------------------------------------------------------- Vertex ->
