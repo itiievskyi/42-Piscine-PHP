@@ -1,5 +1,4 @@
 <?php
-	require_once 'Color.class.php';
 	require_once 'Vertex.class.php';
 
 	class Vector {
