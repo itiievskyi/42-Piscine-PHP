@@ -17,4 +17,3 @@ $nw->recruit($varys);
 $nw->fight();
 
 ?>
-
