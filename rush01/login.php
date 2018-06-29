@@ -1,6 +1,6 @@
 <?php
 
-	echo "string";
+	$data = $_POST;
 	require "mysql_config.php";
 	$conn = mysqli_connect(SQL_HOST, SQL_USER, SQL_PASS, SQL_DB);
 	if (!$conn) {
@@ -33,17 +33,41 @@
 			mysqli_query($conn, $sql);
 			setcookie("id", $data['user_id'], time()+60*60*24*30);
 			setcookie("hash", $hash, time()+60*60*24*30,null,null,null,true);
-			header("Location: check.php");
+			header("Location: check.php"); exit();
 		} else {
-			echo "Incorrect password";
+			echo '<div class = "reg_err">Incorrect password</div>';
 		}
 	}
 
 ?>
 
-<form method="POST">
-Логин <input name="login" type="text" required><br>
-Пароль <input name="password" type="password" required><br>
-Не прикреплять к IP(не безопасно) <input type="checkbox" name="not_attach_ip"><br>
-<input name="submit" type="submit" value="Войти">
-</form>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Awesome Starships Battles II</title>
+		<link href="styles/login.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="d_signup">
+		<p>Hello, stranger!<br>Type your credentials to start...</p>
+		<hr>
+		<form id="signup" action="login.php" method="post">
+			<p>
+				<p>Login</p>
+				<input type="text" name="login"
+				value="<?php echo @$data['login']; ?>" required>
+			</p>
+			<p>
+				<p>Password</p>
+				<input type="password" name="password"
+				value="<?php echo @$data['password']; ?>" required>
+			</p>
+			<p>
+				<button name="submit" type="submit" value="login">Enter</button>
+			</p>
+		</form>
+		<hr>
+		<p>... or <a href="signup.php">sign up</a></p>
+	</div>
+	</body>
+</html>

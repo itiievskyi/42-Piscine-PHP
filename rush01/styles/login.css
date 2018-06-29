@@ -1,0 +1,62 @@
+body {
+	background-image: url("../images/bg_login.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	width: 100%;
+}
+
+.d_signup {
+	border-radius: 5px;
+	display: block;
+	background: rgba(0, 0, 0, 0.8);
+	color: white;
+	width: 300px;
+	padding: 20px;
+	position: fixed;
+	top: 200px;
+	margin-left: 50px;
+	font-size: 20px;
+	text-align: center;
+}
+
+#signup {
+	margin: 20px 30px 20px 30px;
+}
+
+#signup p {
+	font-size: 20px;
+}
+
+div.d_signup p a {
+	font-size: 20px;
+	color: white;
+}
+
+div.d_signup form#signup input[type="text"],
+div.d_signup form#signup input[type="email"],
+div.d_signup form#signup input[type="password"],
+div.d_signup form#signup button[type="submit"] {
+	font-size: 20px;
+	padding: 5px;
+	width: 100%;
+}
+
+div.d_signup form#signup button[type="submit"] {
+	margin-top: 30px;
+	background: orange;
+	border: none;
+}
+
+.reg_err {
+	background: rgba(255, 255, 255, 0.8);
+	margin: 0;
+	color: red;
+	width: 500px;
+	text-align: center;
+	font-size: 20px;
+	padding: 5px;
+	border-radius: 5px;
+}

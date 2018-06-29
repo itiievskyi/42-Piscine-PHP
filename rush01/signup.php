@@ -63,7 +63,7 @@
 		// final if error
 		} else {
 			echo '<div class = "reg_err">' . array_shift($errors) .
-			'</div><hr>';
+			'</div>';
 		}
 	}
 ?>
@@ -71,27 +71,43 @@
 	<!--
 		Creating a form for registration
 	-->
-
-<form class="sighup" action="/signup.php" method="post">
-	<p>
-		<p>Your login</p>
-		<input type="text" name="login" value="<?php echo @$data['login']; ?>">
-	</p>
-	<p>
-		<p>Your email</p>
-		<input type="email" name="email" value="<?php echo @$data['email']; ?>">
-	</p>
-	<p>
-		<p>Type your password</p>
-		<input type="password" name="password"
-		value="<?php echo @$data['password']; ?>">
-	</p>
-	<p>
-		<p>Type the password again</p>
-		<input type="password" name="password_2"
-		value="<?php echo @$data['password_2']; ?>">
-	</p>
-	<p>
-		<button type="submit" name="do_signup">Signup</button>
-	</p>
-</form>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Awesome Starships Battles II</title>
+		<link href="styles/login.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="d_signup">
+		<p>Welcome to our community!<br>Fill the form to signup...</p>
+		<hr>
+		<form id="signup" action="signup.php" method="post">
+			<p>
+				<p>Your login</p>
+				<input type="text" name="login"
+				value="<?php echo @$data['login']; ?>">
+			</p>
+			<p>
+				<p>Your email</p>
+				<input type="email" name="email"
+				value="<?php echo @$data['email']; ?>">
+			</p>
+			<p>
+				<p>Type your password</p>
+				<input type="password" name="password"
+				value="<?php echo @$data['password']; ?>">
+			</p>
+			<p>
+				<p>Type the password again</p>
+				<input type="password" name="password_2"
+				value="<?php echo @$data['password_2']; ?>">
+			</p>
+			<p>
+				<button type="submit" name="do_signup">Sign up</button>
+			</p>
+		</form>
+		<hr>
+		<p>... or <a href="login.php">log in</a></p>
+		</div>
+	</body>
+</html>

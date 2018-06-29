@@ -7,10 +7,12 @@
 
 	$arr = array('index', 'login', 'signup', 'error');
 	if(!in_array($view, $arr)) {
-		$view = 'error';
+		header('Location: error.php');
 	}
 
-	if ($view == "login") {
+	if ($view == "login" && $_COOKIE['id'] == '') {
 		header('Location: login.php');
+	} else {
+		header('Location: game.php');
 	}
 ?>
