@@ -39,6 +39,9 @@
 		if ($view == "top") {
 			include("$view.php");
 		}
+		if ($view == "play") {
+			include("$view.php");
+		}
 		?>
 	</body>
 </html>
