@@ -1,0 +1,129 @@
+body {
+	background-image: url("../images/bg_game.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	width: 100%;
+}
+
+.navbar {
+	overflow: hidden;
+	background-color: #000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	font-size: 25px;
+	color: white;
+	vertical-align: middle;
+}
+
+.navbar a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 15px 20px;
+	text-decoration: none;
+}
+
+.navbar p {
+	float: left;
+	display: inline;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 15px 20px;
+	text-decoration: none;
+	height: 20px;
+	margin: 0 auto 0 auto;
+	margin-left: 200px;
+	font-style: italic;
+	text-align: center;
+}
+
+.navbar a:hover {
+	background: #ddd;
+	color: black;
+}
+
+#menu_table {
+	width: 1610px;
+	height: 910px;
+	margin: auto;
+}
+
+#menu_table tr td{
+	width: 400px;
+	height: 300px;
+}
+
+.container {
+	position: relative;
+	width: 100%;
+}
+
+.image {
+	opacity: 1;
+	display: block;
+	width: 100%;
+	height: auto;
+	transition: .5s ease;
+	backface-visibility: hidden;
+}
+
+.middle {
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+	color: white;
+	background: black;
+}
+
+.container:hover .image {
+	opacity: 0.75;
+}
+
+.container:hover .middle {
+	opacity: 1;
+}
+
+.text {
+	background-color: black;
+	color: white;
+	font-size: 30px;
+	padding: 16px 50px;
+}
+
+.text a {
+	color: white;
+	text-decoration: none;
+}
+
+.top_table {
+	width: 1000px;
+	margin: auto;
+	margin-top: 200px;
+	text-align: center;
+	font-size: 30px;
+}
+
+.top_table th {
+	background: rgba(0, 0, 0, 0.9);
+	color: white;
+}
+
+.top_table tr {
+	background: rgba(255, 255, 255, 0.9);
+	color: black;
+}
+
+.top_table tr td img {
+	height: 50px;
+}

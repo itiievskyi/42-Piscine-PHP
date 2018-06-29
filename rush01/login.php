@@ -33,7 +33,9 @@
 			mysqli_query($conn, $sql);
 			setcookie("id", $data['user_id'], time()+60*60*24*30);
 			setcookie("hash", $hash, time()+60*60*24*30,null,null,null,true);
-			header("Location: check.php"); exit();
+			setcookie("login", $_POST['login'], time()+3600*720,null,null,null,true);
+			header("Location: check.php");
+			exit();
 		} else {
 			echo '<div class = "reg_err">Incorrect password</div>';
 		}

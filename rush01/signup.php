@@ -79,7 +79,7 @@
 	</head>
 	<body>
 		<div class="d_signup">
-		<p>Welcome to our community!<br>Fill the form to signup...</p>
+		<p>Welcome to our community!<br>Fill the form to sign up...</p>
 		<hr>
 		<form id="signup" action="signup.php" method="post">
 			<p>

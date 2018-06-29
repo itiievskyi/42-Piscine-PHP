@@ -13,13 +13,16 @@
 		intval($_COOKIE['id'])."' LIMIT 1");
 		$userdata = mysqli_fetch_assoc($query);
 		if(($userdata['user_hash'] !== $_COOKIE['hash']) or
-			($userdata['user_id'] !== $_COOKIE['id']))
-		{
+			($userdata['user_id'] !== $_COOKIE['id'])) {
 			setcookie("id", "", time() - 3600*24*30*12, "/");
 			setcookie("hash", "", time() - 3600*24*30*12, "/");
+			print_r($_COOKIE);
+			print "userdata['user_id'] = ";
+			print($userdata['user_id']);
 			print "Something's going wrong...";
 		} else {
-			header("Location: game.php"); exit();
+			header("Location: game.php");
+			exit();
 		}
 	}
 	else {

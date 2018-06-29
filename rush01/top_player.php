@@ -1,0 +1,6 @@
+<tr>
+	<td><?=$i?></td>
+	<td style="width:50px;"><img src="<?=$user['user_image']?>"></td>
+	<td><?=$user['user_login']?></td>
+	<td><?=$user['user_points']?></td>
+</tr>

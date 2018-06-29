@@ -1,0 +1,5 @@
+user_id, user_login, user_password, user_hash, user_points, user_image
+1,Emperor,,,0,360,images/ch1.png
+2,SpaceLord,,,0,1050,images/ch3.png
+3,blackhole,,,0,50,images/ch5.png
+4,admin,3049a1f0f1c808cdaa4fbed0e01649b1,,0,45,images/ch2.png
