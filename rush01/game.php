@@ -1,6 +1,7 @@
 <?php
-
+	session_start();
 	require "mysql_config.php";
+//	require "classes/BattleShip.Class.php";
 	echo "GAME";
 
 	if ($_COOKIE['id'] == '') {
@@ -40,6 +41,9 @@
 			include("$view.php");
 		}
 		if ($view == "play") {
+			include("$view.php");
+		}
+		if ($view == "setoff") {
 			include("$view.php");
 		}
 		?>
