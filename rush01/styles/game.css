@@ -5,7 +5,7 @@ body {
 	background-repeat: no-repeat;
 	background-position: center center;
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	width: 2200px;
+	width: 100%;
 }
 
 .navbar {
@@ -184,6 +184,30 @@ body {
 .setgame {
 	position: static;
 	top: 150px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.playfield {
+	width: 2000px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+}
+
+#grid {
+	border: solid 1px white;
+	margin-top: 00px;
+}
+
+.player_bar {
+	padding: 10px;
+	text-align: center;
+	vertical-align: top;
+}
+
+.player_bar .p_img {
+	margin-top: 10px;
 	margin-left: auto;
 	margin-right: auto;
 }
