@@ -61,11 +61,12 @@
 	{
 		$stamp .= $arr[3].'-'.array_search($arr[2], $m).'-'.$arr[1].' '.$arr[4];
 		$time2 = strtotime($stamp);
-		$time1 = strtotime("1970-01-01 12:00:00");
+		echo "$stamp\n";
+		$time1 = strtotime("1970-01-01 01:00:00");
 		$diff = $time2-$time1;
 		echo "$diff\n";
 	}
-	else 
+	else
 	{
 		echo "Wrong Format\n";
 		exit(-1);
