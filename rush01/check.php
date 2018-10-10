@@ -29,5 +29,4 @@
 		print "You need to activate cookies";
 	}
 
-
  ?>

@@ -1,0 +1,79 @@
+
+<- Matrix ----------------------------------------------------------------------
+Your documentation here.
+---------------------------------------------------------------------- Matrix ->
+Let's start with an harmless identity matrix :
+Matrix IDENTITY instance constructed
+M | vtcX | vtcY | vtcZ | vtxO
+-----------------------------
+x | 0.00 | 0.00 | 0.00 | 0.00
+y | 0.00 | 0.00 | 0.00 | 0.00
+z | 0.00 | 0.00 | 0.00 | 0.00
+w | 0.00 | 0.00 | 0.00 | 0.00
+
+So far, so good. Let's create a translation matrix now.
+Matrix TRANSLATION preset instance constructed
+M | vtcX | vtcY | vtcZ | vtxO
+-----------------------------
+x | 0.00 | 0.00 | 0.00 | 0.00
+y | 0.00 | 0.00 | 0.00 | 0.00
+z | 0.00 | 0.00 | 0.00 | 0.00
+w | 0.00 | 0.00 | 0.00 | 0.00
+
+A scale matrix is no big deal.
+Matrix SCALE preset instance constructed
+M | vtcX | vtcY | vtcZ | vtxO
+-----------------------------
+x | 0.00 | 0.00 | 0.00 | 0.00
+y | 0.00 | 0.00 | 0.00 | 0.00
+z | 0.00 | 0.00 | 0.00 | 0.00
+w | 0.00 | 0.00 | 0.00 | 0.00
+
+A Rotation along the OX axis :
+Matrix Ox ROTATION preset instance constructed
+M | vtcX | vtcY | vtcZ | vtxO
+-----------------------------
+x | 0.00 | 0.00 | 0.00 | 0.00
+y | 0.00 | 0.00 | 0.00 | 0.00
+z | 0.00 | 0.00 | 0.00 | 0.00
+w | 0.00 | 0.00 | 0.00 | 0.00
+
+Or along the OY axis :
+Matrix Oy ROTATION preset instance constructed
+M | vtcX | vtcY | vtcZ | vtxO
+-----------------------------
+x | 0.00 | 0.00 | 0.00 | 0.00
+y | 0.00 | 0.00 | 0.00 | 0.00
+z | 0.00 | 0.00 | 0.00 | 0.00
+w | 0.00 | 0.00 | 0.00 | 0.00
+
+Do a barrel roll !
+Matrix Oz ROTATION preset instance constructed
+M | vtcX | vtcY | vtcZ | vtxO
+-----------------------------
+x | 0.00 | 0.00 | 0.00 | 0.00
+y | 0.00 | 0.00 | 0.00 | 0.00
+z | 0.00 | 0.00 | 0.00 | 0.00
+w | 0.00 | 0.00 | 0.00 | 0.00
+
+The bad guy now, the projection matrix : 3D to 2D !
+The values are arbitray. We'll decipher them in the next exercice.
+Error: some arguments are missed
+M | vtcX | vtcY | vtcZ | vtxO
+-----------------------------
+x | 0.00 | 0.00 | 0.00 | 0.00
+y | 0.00 | 0.00 | 0.00 | 0.00
+z | 0.00 | 0.00 | 0.00 | 0.00
+w | 0.00 | 0.00 | 0.00 | 0.00
+
+Matrices are so awesome, that they can be combined !
+This is a model matrix that scales, then rotates around OY axis,
+then rotates around OX axis and finally translates.
+Please note the reverse operations order. It's not an error.
+
+Fatal error: Uncaught ArgumentCountError: Too few arguments to function Matrix::__construct(), 0 passed in /Users/it/git_42/PHP_Piscine/day06/ex03/Matrix.class.php on line 125 and exactly 1 expected in /Users/it/git_42/PHP_Piscine/day06/ex03/Matrix.class.php:26
+Stack trace:
+#0 /Users/it/git_42/PHP_Piscine/day06/ex03/Matrix.class.php(125): Matrix->__construct()
+#1 /Users/it/git_42/PHP_Piscine/day06/ex03/main_03.php(61): Matrix->mult(Object(Matrix))
+#2 {main}
+  thrown in /Users/it/git_42/PHP_Piscine/day06/ex03/Matrix.class.php on line 26

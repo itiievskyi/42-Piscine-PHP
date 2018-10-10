@@ -28,7 +28,7 @@ $vtx = new Vertex( array( 'x' => 20.0, 'y' => 20.0, 'z' => 0.0 ) );
 $vtc = new Vector( array( 'dest' => $vtx ) );
 $T  = new Matrix( array( 'preset' => Matrix::TRANSLATION, 'vtc' => $vtc ) );
 print( $T . PHP_EOL . PHP_EOL );
-
+/*
 print( 'A scale matrix is no big deal.' . PHP_EOL );
 $S  = new Matrix( array( 'preset' => Matrix::SCALE, 'scale' => 10.0 ) );
 print( $S . PHP_EOL . PHP_EOL );
@@ -68,5 +68,5 @@ print( $M . PHP_EOL );
 print( 'Transform the damn vertex !' . PHP_EOL );
 $vtxB = $M->transformVertex( $vtxA );
 print( $vtxB . PHP_EOL . PHP_EOL );
-
+*/
 ?>

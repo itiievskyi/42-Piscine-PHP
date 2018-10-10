@@ -1,4 +1,191 @@
+<table class="field">
+	<tr>
+		<td rowspan="100" colspan="50"></td>
+	</tr>
+	<?php
+		$a = 1;
+		while ($a++ <= 99) {
+		echo "	<tr>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+				<td>&nbsp</td>
+			</tr>";
+	} ?>
+</table>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
 <img id="scream" src="images/ship_frigate.png" alt="">
 
 <script type="text/javascript">
@@ -34,7 +221,6 @@ window.onload = function() {
 
 
 
-<!--
 <table class="set" style="width:300px;">
 	<tr>
 		<td> <?php// print_r($_SESSION); ?> </td>
