@@ -1,4 +1,20 @@
 
 <- Matrix ----------------------------------------------------------------------
-Your documentation here.
+The Matrix class allows you to do some operations with 4x4 matrixes.
+
+It operates with Vertex and Vector classes, so to create a matrix, you need to
+pass one of the next parameters:
+
+IDENTITY    ------> 'IDENTITY',		------> creates an identity matrix;
+SCALE       ------> 'SCALE',		------> creates a matrix with some 'scale';
+RX          ------> 'Ox ROTATION',	------> rotates matrix by specified angle
+RY          ------> 'Oy ROTATION',	------> rotates matrix by specified angle
+RZ          ------> 'Oz ROTATION',	------> rotates matrix by specified angle
+TRANSLATION ------> 'TRANSLATION',	------> creates a matrix by reflection
+PROJECTION  ------> 'PROJECTION'	------> creates a matrix by projection
+
+Also, there some useful methods to operate with your matrixes:
+* Matrix mult( Matrix $rhs ) : returns the multiplication of both matrices.
+* Vertex transformVertex( Vertex $vtx ) : returns a new vertex resulting from
+the transformation of the vertex by the matrix.
 ---------------------------------------------------------------------- Matrix ->
