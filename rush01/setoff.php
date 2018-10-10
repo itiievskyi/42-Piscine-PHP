@@ -20,16 +20,16 @@
 			$_SESSION['game'] = 0;
 		}
 		if ($_SESSION['game'] > 0) {
-			$_SESSION['p2']['ships'][1] = $_POST['p1_select_1'];
-			$_SESSION['p2']['ships'][2] = $_POST['p2_select_2'];
-			$_SESSION['p2']['ships'][3] = $_POST['p3_select_3'];
-			$_SESSION['p2']['ships'][4] = $_POST['p4_select_4'];
-			$_SESSION['p2']['ships'][5] = $_POST['p5_select_5'];
 			$_SESSION['p1']['ships'][1] = $_POST['p1_select_1'];
-			$_SESSION['p1']['ships'][2] = $_POST['p2_select_2'];
-			$_SESSION['p1']['ships'][3] = $_POST['p3_select_3'];
-			$_SESSION['p1']['ships'][4] = $_POST['p4_select_4'];
-			$_SESSION['p1']['ships'][5] = $_POST['5_select_5'];
+			$_SESSION['p1']['ships'][2] = $_POST['p1_select_2'];
+			$_SESSION['p1']['ships'][3] = $_POST['p1_select_3'];
+			$_SESSION['p1']['ships'][4] = $_POST['p1_select_4'];
+			$_SESSION['p1']['ships'][5] = $_POST['p1_select_5'];
+			$_SESSION['p2']['ships'][1] = $_POST['p2_select_1'];
+			$_SESSION['p2']['ships'][2] = $_POST['p2_select_2'];
+			$_SESSION['p2']['ships'][3] = $_POST['p2_select_3'];
+			$_SESSION['p2']['ships'][4] = $_POST['p2_select_4'];
+			$_SESSION['p2']['ships'][5] = $_POST['p2_select_5'];
 			header("Location: game.php?view=play");
 			exit();
 		}

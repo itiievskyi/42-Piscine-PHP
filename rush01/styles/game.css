@@ -188,6 +188,7 @@ body {
 	margin-right: auto;
 }
 
+<<<<<<< HEAD
 .field {
 	width: 2000px;
 	height: 1000px;
@@ -212,4 +213,28 @@ body {
 	border: solid 0.1px #333;
 	height: 9.9px;
 	width: 9.9px;
+=======
+.playfield {
+	width: 2000px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+}
+
+#grid {
+	border: solid 1px white;
+	margin-top: 00px;
+}
+
+.player_bar {
+	padding: 10px;
+	text-align: center;
+	vertical-align: top;
+}
+
+.player_bar .p_img {
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+>>>>>>> b87c7a152c74b182f394d12fae4d2091d921a975
 }

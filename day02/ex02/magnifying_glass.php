@@ -1,7 +1,7 @@
 #!/usr/bin/php
 <?php
-if ($argc == 2 && file_exists($argv[1]))
-{
+if ($argc == 2 && file_exists($argv[1])) {
+
 	$str = file_get_contents($argv[1]);
 
 	$str = preg_replace_callback("/(<a )(.*?)(>)(.*)(<\/a>)/si",
@@ -18,6 +18,12 @@ if ($argc == 2 && file_exists($argv[1]))
 		return ($matches[0]);
 	},
 	$str);
-echo $str;
+
+	echo $str;
+} else if ($argc != 2) {
+	$arg = $argc - 1;
+	echo "There can be only one argument (you have $arg)\n";
+} else if (!file_exists($argv[1])) {
+	echo "ERROR: Specified file doesn't exist\n";
 }
 ?>
