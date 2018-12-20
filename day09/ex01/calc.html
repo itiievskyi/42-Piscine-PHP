@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculator</title>
+	<style>
+		body {
+			background-image: url(https://media.istockphoto.com/vectors/mathematics-background-different-numbers-pattern-vector-id629737180);
+			background-repeat: repeat;
+		}
+		#calcform {
+			width: 600px;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		body form#calcform input[type="text"],
+		body form#calcform button[type="submit"] {
+			font-size: 20px;
+			padding: 5px;
+			background-color: #333;
+			color: white;
+		}
+	</style>
+	<script>
+		window.onload = function() {
+			setInterval("alert('Please, use me...')", 30000)
+		};
+
+		function calc(form) {
+			const op = form.elements["op"].value;
+			var v1 = form.elements["v1"].value;
+			var v2 = form.elements["v2"].value;
+			if (!isInt(v1) || !isInt(v2)) {
+				alert('Error :(');
+				return false;
+			}
+			else {
+				v1 = parseInt(v1, 10);
+				v2 = parseInt(v2, 10);
+				if (v1 < 0 || v2 < 0) {
+					alert('Error :(');
+					return false;
+				}
+			switch (op) {
+				case ("+"):
+					result(v1 + v2);
+					break;
+				case ("-"):
+					result(v1 - v2);
+					break;
+				case ("*"):
+					result(v1 * v2);
+					break;
+				case ("/"):
+					if (v2 == 0) {
+						result("It’s over 9000!");
+					} else {
+						result(v1 / v2);
+					}
+					break;
+				case ("%"):
+					if (v2 == 0) {
+						result("It’s over 9000!");
+					} else {
+						result(v1 % v2);
+					}
+					break;
+				}
+			}
+		}
+		function isInt(value) {
+			return (!isNaN(value) && parseInt(Number(value)) == value && !isNaN(parseInt(value, 10)));
+		}
+		function result(value) {
+			console.log(value);
+			alert(value);
+		}
+	</script>
+</head>
+<body>
+<form id="calcform" onsubmit="calc(this)" action="">
+	<input id="v1" type="text">
+	<select name="op" type="text" style="font-size: 20px; padding: 5px;">
+		<option value="+">+</option>
+		<option value="-">-</option>
+		<option value="*">*</option>
+		<option value="/">/</option>
+		<option value="%">%</option>
+	</select>
+	<input id="v2" type="text">
+	<button id="submit" name="submit" value="OK" style="font-size: 20px; padding: 5px;">Try me!</button>
+</form>
+</body>
+</html>
